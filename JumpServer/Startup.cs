@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using JumpClient.Controllers;
+using JumpServer.Busi;
+using JumpServer.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,8 +34,9 @@ namespace JumpServer
         public void ConfigureServices(IServiceCollection services)
         {
             // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                // .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
+            // .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
 
+            services.AddSingleton<ClientModel>();
             services.AddSignalR();
             services.AddControllers();
             services.AddSwaggerGen(c =>

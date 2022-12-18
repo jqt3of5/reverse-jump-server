@@ -1,51 +1,61 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using JumpServer.Busi;
 using JumpServer.Models;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Logging;
+using Shared;
 
-namespace JumpClient.Controllers
+namespace JumpServer.Controllers
 {
-    public interface IClient
-    {
-        Task<bool> StartTunnel(TunnelValueObject tunnel);
-        Task<bool> StopTunnel(TunnelValueObject tunnel);
-    }
-    public class ClientHub : Hub<IClient>
+   
+    public class ClientHub : Hub<IClient>, IHub
     {
         private readonly ClientModel _model;
+        private readonly ILogger<ClientHub> _logger;
 
-        public ClientHub(ClientModel model)
+        public ClientHub(ClientModel model, ILogger<ClientHub> logger)
         {
             _model = model;
+            _logger = logger;
         }
 
         public override Task OnConnectedAsync()
         {
+            _logger.Log(LogLevel.Information, $"Client connected with ID: {Context.ConnectionId}");
             _model.ClientConnected(Context.ConnectionId);
             return base.OnConnectedAsync();
         }
 
         public override Task OnDisconnectedAsync(Exception exception)
         {
+            _logger.Log(LogLevel.Information, $"Client disconnected with ID: {Context.ConnectionId}");
             _model.ClientDisconnected(Context.ConnectionId);
             return base.OnDisconnectedAsync(exception);
         }
 
         public async Task ClientHello(ClientValueObject client)
         {
-                 
-        }
-        
-        public async Task StartTunnel(string clientId, TunnelValueObject tunnel)
-        {
-            await Clients.Client(clientId).StartTunnel(tunnel);
+            _logger.Log(LogLevel.Information, $"ClientHello with ID: {client.ClientName} ({client.ClientId})");
+            _model.UpdateClient(client with {ConnectionId = Context.ConnectionId});
         }
 
-        public async Task StopTunnel(string clientId, TunnelValueObject tunnel)
+        public async Task TunnelConnected(ClientValueObject client)
         {
-            await Clients.Client(clientId).StopTunnel(tunnel);
+            foreach (var tunnel in client.Tunnels)
+            {
+                _logger.Log(LogLevel.Information, $"Tunnel Connected with ID: {client.ClientName} ({tunnel.TunnelId})");
+                _model.TunnelConnected(client.ClientId, tunnel.TunnelId);
+            }
+        }
+
+        public async Task TunnelDisconnected(ClientValueObject client)
+        {
+            foreach (var tunnel in client.Tunnels)
+            {
+                _logger.Log(LogLevel.Information, $"Tunnel Disconnected with ID: {client.ClientName} ({tunnel.TunnelId})");
+                _model.TunnelDisconnected(client.ClientId, tunnel.TunnelId);
+            } 
         }
     }
 }

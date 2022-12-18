@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpServer", "JumpServer\Ju
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpClient", "JumpClient\JumpClient.csproj", "{668D6162-270E-4BF1-BF97-EBBB3839C095}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{44126C06-343A-438A-B184-8066E7E709EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2F63E277-4C96-4091-9EB9-7A4A1210E484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44126C06-343A-438A-B184-8066E7E709EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44126C06-343A-438A-B184-8066E7E709EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44126C06-343A-438A-B184-8066E7E709EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44126C06-343A-438A-B184-8066E7E709EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F63E277-4C96-4091-9EB9-7A4A1210E484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F63E277-4C96-4091-9EB9-7A4A1210E484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F63E277-4C96-4091-9EB9-7A4A1210E484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F63E277-4C96-4091-9EB9-7A4A1210E484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

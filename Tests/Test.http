@@ -1,0 +1,10 @@
+﻿POST http://localhost:5000/client/1234/tunnel
+Content-Type: application/json
+
+{
+  "TunnelId": "qwerty",
+  "ServerPort": 1234,
+  "ClientPort": 1234,
+  "Established": false,
+  "TunnelName": "tunnel"
+}
