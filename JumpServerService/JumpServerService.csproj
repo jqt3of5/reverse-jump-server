@@ -4,12 +4,14 @@
         <TargetFramework>net7.0</TargetFramework>
         <UserSecretsId>aspnet-JumpServer-36A672EF-1D50-41BF-BD53-715BE96AE32A</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>JumpServer</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.4" />
         <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
+        <PackageReference Include="SSH.NET" Version="2023.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 

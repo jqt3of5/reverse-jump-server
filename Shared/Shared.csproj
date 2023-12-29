@@ -5,4 +5,8 @@
         <LangVersion>default</LangVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="SSH.NET" Version="2023.0.0" />
+    </ItemGroup>
+
 </Project>

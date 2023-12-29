@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpServer", "JumpServer\JumpServer.csproj", "{440A566C-A600-45B9-A998-1775CB660E92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpServerService", "JumpServerService\JumpServerService.csproj", "{440A566C-A600-45B9-A998-1775CB660E92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{44126C06-343A-438A-B184-8066E7E709EB}"
 EndProject

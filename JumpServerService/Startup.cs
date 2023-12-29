@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using JumpServer.Busi;
 using JumpServer.Controllers;
+using JumpServer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,7 +37,10 @@ namespace JumpServer
             // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             // .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
 
-            services.AddSingleton<ClientModel>();
+            services.AddSingleton<TunnelRepo>();
+            services.AddSingleton<JumpServerRepo>();
+            services.AddHostedService<TunnelService>();
+            
             services.AddSignalR();
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -51,11 +55,10 @@ namespace JumpServer
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JumpServer v1"));
+                
             }
-            
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JumpServer v1")); 
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -66,7 +69,6 @@ namespace JumpServer
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<ClientHub>("/clientHub");
             });
         }
     }

@@ -7,37 +7,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using Shared;
+using Shared.Models;
 
 namespace JumpServer.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TunnelController : ControllerBase
+    public class JumpServerController : ControllerBase
     {
         private readonly ILogger<TunnelController> _logger;
+        private readonly JumpServerRepo _repo;
 
-        public TunnelController(ILogger<TunnelController> logger) 
+        public JumpServerController(ILogger<TunnelController> logger, JumpServerRepo repo)
         {
             _logger = logger;
+            _repo = repo;
         }
 
         [HttpGet]
-        public IEnumerable<ClientValueObject> Get()
+        public IEnumerable<JumpServerValueObject> Get()
         {
-            
-        }
-
-        [HttpPost]
-        public async Task<bool> AttachTunnel([FromBody] TunnelValueObject tunnel)
-        {
-           
-        }
-
-        [HttpDelete]
-        [Route("{tunnelId}")]
-        public async Task<bool> DetachTunnel(string tunnelId)
-        {
-           
+            return _repo.GetAllJumpServers();
         }
     }
 }
