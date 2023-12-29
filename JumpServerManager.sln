@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpServer", "JumpServer\JumpServer.csproj", "{440A566C-A600-45B9-A998-1775CB660E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpClient", "JumpClient\JumpClient.csproj", "{668D6162-270E-4BF1-BF97-EBBB3839C095}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{44126C06-343A-438A-B184-8066E7E709EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2F63E277-4C96-4091-9EB9-7A4A1210E484}"
@@ -18,10 +16,6 @@ Global
 		{440A566C-A600-45B9-A998-1775CB660E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440A566C-A600-45B9-A998-1775CB660E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440A566C-A600-45B9-A998-1775CB660E92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{668D6162-270E-4BF1-BF97-EBBB3839C095}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44126C06-343A-438A-B184-8066E7E709EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44126C06-343A-438A-B184-8066E7E709EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44126C06-343A-438A-B184-8066E7E709EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
