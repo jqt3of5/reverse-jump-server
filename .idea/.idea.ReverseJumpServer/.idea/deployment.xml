@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="tiltpi" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="tiltpi">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../../../../Program Files/dotnet/sdk/7.0.404/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_5_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/../../../../Program Files/dotnet/sdk/7.0.404/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_7_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/../../../../Program Files/dotnet/sdk/7.0.404/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_7_default.editorconfig" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/17.3.2/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/microsoft.testplatform.testhost/17.3.2/build/netcoreapp2.1/x64/testhost.dll" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/microsoft.testplatform.testhost/17.3.2/build/netcoreapp2.1/x64/testhost.exe" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/NUnit3.TestAdapter.dll" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/NUnit3.TestAdapter.pdb" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/nunit.engine.api.dll" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/nunit.engine.core.dll" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/nunit.engine.dll" web="/" />
+            <mapping local="$USER_HOME$/.nuget/packages/nunit3testadapter/4.2.1/build/netcoreapp2.1/testcentric.engine.metadata.dll" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerManager.sln" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/.dockerignore" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Busi/JumpServerRepo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Busi/TunnelRepo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Controllers/JumpServerController.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Controllers/TunnelController.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Dockerfile" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/JumpServerService.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Properties/launchSettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Services/TunnelService.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/Startup.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/appsettings.Development.json" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/appsettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/jump.json" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/obj/Debug/net7.0/JumpServerService.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/obj/Debug/net7.0/JumpServerService.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/JumpServerService/servers.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/Models/ConfiguredTunnels.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/Models/JumpServerValueObject.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/Models/TunnelValueObject.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/Shared.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/Shared.csproj.DotSettings" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/obj/Debug/net5.0/Shared.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Shared/obj/Debug/net5.0/Shared.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/Test.http" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/Tests.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/UnitTest1.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/Usings.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/obj/Debug/net7.0/Tests.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/obj/Debug/net7.0/Tests.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Tests/obj/Debug/net7.0/Tests.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

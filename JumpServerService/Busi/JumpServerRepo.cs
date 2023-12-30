@@ -67,22 +67,6 @@ public class JumpServerRepo
         return false;
     }
     
-    public bool ValidateJumpServer(string hostkey, string jumpServerId)
-    {
-        if (_servers.TryGetValue(jumpServerId, out var j))
-        {
-            if (!string.IsNullOrEmpty(j.HostKey) && string.IsNullOrEmpty(hostkey))
-            {
-                if (j.HostKey != hostkey)
-                {
-                    return false;
-                }
-            }
-        }
-        
-        return true;
-    }
-
     public bool TryGetJumpServer(string address, uint port, string username, [MaybeNullWhen(false)] out JumpServerValueObject? jumpServer)
     {
         foreach (var server in _servers.Values)

@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,8 +23,13 @@ namespace JumpServer
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.ConfigureAppConfiguration(builder => 
-                        builder.AddJsonFile("jump.json", optional: false))
+                    webBuilder
+                        .UseContentRoot(System.AppContext.BaseDirectory)
+                        .UseKestrel()
+                        .ConfigureAppConfiguration(builder =>
+                        {
+                            builder.SetBasePath(AppContext.BaseDirectory);
+                        })
                         .UseStartup<Startup>();
                 });
     }

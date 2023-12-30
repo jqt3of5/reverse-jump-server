@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9240dd4c-c121-4ef6-9d4a-7d2d14d2d7c0" name="tiltpi">
+        <fileTransfer rootFolder="/home/homeassistant/jump/bin" accessType="SFTP" host="tiltpi" port="22" sshConfigId="5845c813-b775-4e2d-b3ee-de84027eb8d4" sshConfig="jqt3of5@tiltpi:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
